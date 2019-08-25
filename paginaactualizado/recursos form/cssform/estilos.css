@@ -1,0 +1,63 @@
+	body{
+	
+	margin: 0;
+	padding: 0;	
+	
+	}
+	label{
+	display: block}
+	input:invalid{
+	
+	border: 1px solid #CC0000;
+	}
+	input:valid{
+	
+	background-color: lightyellow;
+	border: 1px solid #3399ff;
+	}
+	input:valid+.invalid{
+	visibility: hidden;
+	
+	}
+	input:invalid+.invalid{
+	visibility: visible;}
+	
+	input#enviar{
+	margin-top: 10px;
+	padding: 4px 20px;
+	background: rgb(0,163,255);
+	border: 2px outset #dad9d8;
+	font-size: 1.1em;
+ 
+	background:  #96FD03;
+
+	text-shadow: 0px 1px 10px #000;
+	border-radius: 10px;
+	box-shadow: rgba(0,0,0,.55)  0 1px 6px;
+	}
+	
+	input#enviar:hover,input#enviar:focus{
+background:red;
+	background: ;
+	border: 2px solid #dad9d8;
+	}
+
+fieldset{ border-radius: 10px; 
+	border-color: blue; 
+
+
+	}
+.contenedor{
+	display: flex;
+	justify-content: center;
+
+}
+.div2{
+	padding: 30px;
+
+	display:flex;
+	justify-content: center;
+	
+	width: 100%;}
+
+	input{ border-radius: 3px; }

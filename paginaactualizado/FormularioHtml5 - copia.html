@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="recursos form/cssform/estilos.css">
+	<script  src="recursos form/jsform/jquery-3.4.1.min.js"></script>
+		<script  src="http://afarkos.github.io/webshim/demos/js-webshim/minified/extras/modernizr-custom.js"></script>
+		<script  src="http://afarkos.github.io/webshim/demos/js-webshim/demos/js-webshim/minified/polyfiller.js"></script>
+		<script >$webshimms.polyfill();</script>
+		
+		<script >$(document).ready(function(){
+			$("form").submit(function(){
+			alert("formulario validado...");
+			return false;
+});
+});
+</script>
+<style type="text/css">
+	
+body{
+	overflow: hidden;
+margin: 0;
+padding: 0;
+  height: 100%;
+    background-repeat: no-repeat;
+    background: url(imagen/painting-graffiti-urban-decay-abandon-deserted-ruin-psychedelic-architecture-buildings-color-background-190368.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+
+ 
+}
+header label{
+ display: none;
+ width: 30px;
+ height: 25px;
+ padding: 10px; }
+header label:hover{ background: rgba(0,0,0,0.5); }
+
+ul{
+	
+	opacity: 0.8;
+
+height: 40px;
+  background-position: 30px;
+
+padding: 0;
+margin: 0px;
+
+font-weight: 300;
+	text-align: right;
+
+	transition: max-height 0.5s;
+
+}
+ul:hover{
+	transition: 0.5s;
+	opacity: 2;
+}
+
+
+
+
+
+.menu li:nth-child(2) {
+	background: red;
+}
+
+
+
+
+.nav-items {
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: #96FD03;
+display: inline-block;
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+
+.inicio{
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: #96FD03;
+position: absolute;
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+.inicio:hover{
+	background: red;
+	--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;}
+.nav-items:hover{
+
+background: red;
+--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;
+}
+
+
+
+
+
+/*.nav{
+
+	text-align: left;
+	position: absolute;
+	font-family: Roboto,sans-serif;
+background: #96FD03;
+
+padding: .375rem .75rem;
+ border-radius: 6px;
+ font-size: 20px;
+ opacity: inherit;
+
+}
+.nav:hover{
+	
+--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ box-shadow: 0 0 0 5px #96FD03, 0 0 0 5px white;
+	 
+}*/
+
+
+a:hover{text-decoration: none;
+color: white;
+
+}
+
+	a{  color :white;
+		text-decoration: none; 
+		line-height: 16px;
+
+		} 
+			
+
+.footer{
+	height: 55px;
+		font-family: Roboto,sans-serif;
+	font-size: 20px;
+	text-decoration-color: orange
+	font:sans-serif;
+	position:fixed;
+bottom:0;
+	width: 100%;
+	color: white;
+	background: black;
+	padding: 0px;
+	text-align: center;
+
+   opacity: 0.5;
+   overflow: hidden;
+}
+.footer:hover{ opacity: 2; }
+
+img{width: 25px; border-radius: 10px;}
+img:hover{
+	 box-shadow: 0 0 0 5px white, 0 0 0 5px white;
+}
+
+header{ 
+	width: 100%;
+	 background: black;}
+#btn-menu{
+	display: none;}
+
+
+
+@media (max-width:500px ){
+	header label{ display: block; }
+	.nav-items{ display: flex; }
+#quienes{ display: none; }
+.nav-items:hover{
+
+	
+margin: 9px;
+background: red;
+--webkit-transform: rotateY(0deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(0deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;
+}
+.inicio:hover{
+	margin: 9px;
+	background: red;
+	--webkit-transform: rotateY(0deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(0deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;}
+
+	.inicio{ position: relative; }
+	.menu{
+	 position: absolute;
+	 width: 70%;
+	 margin-left: -70%;
+	  }
+	.menu ul{ 
+		text-align: left;
+		flex-direction: column; 
+	}
+
+	#btn-menu:checked ~ .menu {
+		margin:  0;
+	}
+}
+
+#quienes{ 
+	float: right; color: white;
+    cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: yellow;
+
+
+ padding: .550rem .75rem;
+ border-radius: 6px;
+    font-size: 20px;
+    opacity: inherit;
+}
+#quienes:hover{
+
+	background: red;
+}
+
+
+.inicio{
+
+
+}
+legend{font-family: Roboto,sans-serif;
+color: white;font-size: 20px;}
+label{font-family: Roboto,sans-serif;
+color: white;}
+span{font-family: Roboto,sans-serif;
+color: white; font-size: 20px;}
+</style>
+</head>
+<body>
+	
+	  <header>
+	  	<input type="checkbox" id="btn-menu">
+	  	<label for="btn-menu"><img  class="icon"  src="imagen/menu.png"></label>
+<nav class="menu">
+	<ul class="ul">
+			<li class="inicio" ><a href="IND.html">Inicio</a></li>
+			<li class="nav-items"><a href="FormularioHtml5 - copia.html">Formulario</a></li>
+            <li class="nav-items"><a href="video.HTML">Video</a></li>
+            <li class="nav-items"><a href="dragdrop.html">Drag and Drop</a></li>
+             
+		</ul>
+
+</nav>
+
+	  </header>
+	    	
+<div class="div2"><FIELDSET>
+	
+<legend>Detalles contacto</legend>
+
+
+<form action="#">
+	
+<label for="nombre">nombre</label>
+<input type="text"  autofocus placeholder="Escribe tu nombre" name="nombre" required="required" pattern="[a-zA-Z/s{5,}]">
+<span  class="invalid">*El nombre requerido</span>
+
+<label form="email">Email</label>
+<input type="email" name="email" required placeholder="Escribe tu email">
+
+<span class="invalid">*El email es requrido</span>
+
+<label for="telefono">Telefono</label>
+ <input type="tel" name="telefono" required placeholder="Escribe tu telefono">
+ <span class="invalid">*El telefono es requerido</span>
+
+<label for="pais">Pais</label>
+<input  name="pais" list="paises"  placeholder="Escribe tu pais">
+
+<datalist  id="paises">
+	<option>Mexico</option>
+	<option>Colombia</option>
+
+<option>España</option>
+<option>otro</option>
+</datalist>
+
+<label>Edad</label>
+
+<input type="number" name="edad" min="18" max="65">
+<label for="nacimiento">Fecha de nacimiento</label>
+<input type="date" name="nacimiento" min="1900-01-01" max="3000-12-31">
+
+<div>
+	<input type="submit" value="Enviar" id="enviar">
+</div>
+</form>
+</FIELDSET></div>
+
+	   
+	
+
+	  
+<footer class="footer">
+	 Programacion 3 - Todos los derechos reservados
+		<label class="icon-twitter"></label>
+		<label class="icon-facebook"></label>
+		<label for="" class="icon-instagram"></label>
+		<a id="quienes" href="quienes somos.html">Quienes somos</a>
+		
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

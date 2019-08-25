@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery/jquery.min.js"></script>
+	 
+	
+	
+
+ 
+	
+	<title>Document</title>
+	</head>
+
+<style type="text/css">
+	
+body{
+	
+margin: 0;
+padding: 0;
+  height: 100%;
+    background-repeat: no-repeat;
+    background: url(imagen/painting-graffiti-urban-decay-abandon-deserted-ruin-psychedelic-architecture-buildings-color-background-190368.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+
+ 
+}
+header label{
+ display: none;
+ width: 30px;
+ height: 25px;
+ padding: 10px; }
+header label:hover{ background: rgba(0,0,0,0.5); }
+
+ul{
+	
+	opacity: 0.7;
+
+height: 40px;
+  background-position: 30px;
+
+padding: 0;
+margin: 0px;
+
+font-weight: 300;
+	text-align: right;
+
+	transition: max-height 0.5s;
+
+}
+
+
+ul:hover{ opacity: 5; }
+
+
+.menu{}
+.menu li:nth-child() {
+	
+	background: red;
+}
+
+
+
+
+.nav-items {
+	text-decoration-color: white;
+	color: white;
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: #96FD03;
+display: inline-block;
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+	
+}
+
+.inicio{
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: #96FD03;
+position: absolute;
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+.inicio:hover{
+	background: red;
+	--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;}
+.nav-items:hover{
+
+background: red;
+--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;
+}
+
+
+
+
+
+/*.nav{
+
+	text-align: left;
+	position: absolute;
+	font-family: Roboto,sans-serif;
+background: #96FD03;
+
+padding: .375rem .75rem;
+ border-radius: 6px;
+ font-size: 20px;
+ opacity: inherit;
+
+}
+.nav:hover{
+	
+--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ box-shadow: 0 0 0 5px #96FD03, 0 0 0 5px white;
+	 
+}*/
+
+a:link{text-decoration: none; }
+a:hover{text-decoration: none;
+color: white;
+
+}
+
+	a{  color :white;
+		text-decoration: none; 
+		
+
+		} 
+			
+
+
+.footer{
+		font-family: Roboto,sans-serif;
+	font-size: 20px;
+	text-decoration-color: orange
+	font:sans-serif;
+	position:fixed;
+bottom:0;
+	width: 100%;
+	color: white;
+	background: black;
+	padding: 0px;
+	text-align: center;
+height: 40px;
+   opacity: 0.5;
+}
+.footer:hover{ opacity: 2; }
+
+img{width: 25px; border-radius: 10px;}
+img:hover{
+	 box-shadow: 0 0 0 5px white, 0 0 0 5px white;
+}
+
+header{ 
+	width: 100%;
+	 background: black;}
+#btn-menu{
+	display: none;}
+
+
+
+@media (max-width:500px ){
+	header label{ display: block; }
+
+	#quienes{display: none;}
+	.nav-items{ display: flex; }
+.boxs{display: flex; flex-direction: column;}
+.nav-items:hover{
+margin: 9px;
+background: red;
+--webkit-transform: rotateY(0deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(0deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;
+}
+.inicio:hover{
+	margin: 9px;
+	background: red;
+	--webkit-transform: rotateY(0deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(0deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;}
+
+	.inicio{ position: relative; }
+	.menu{
+	 position: absolute;
+	 width: 70%;
+	 margin-left: -70%;
+	  }
+	.menu ul{ 
+		text-align: left;
+		flex-direction: column; 
+	}
+
+	#btn-menu:checked ~ .menu {
+		margin:  0;
+	}
+}
+
+
+#quienes{ float: right; color: white;}
+
+
+
+
+ .content{ display: flex;justify-content: center; }
+
+.a{ width: 250px; height: 250px; }
+.perfil{
+	background: blue;
+	 display: flex; 
+	 flex-direction: column;
+}
+
+.caj{
+display: inline-flex;
+
+}
+.user2{
+display: inline-flex;
+}
+.boxs{
+	
+	padding: 10px;
+		
+	width: 100%;
+display: flex;
+justify-content: center;
+
+}
+#quienes{ 
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: red;
+
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+#quienes:hover{
+
+	background: red;
+}
+
+
+p{color: white;
+	
+ font-family: Roboto,sans-serif;
+}
+</style>
+
+<body>
+	  <header>
+	  	<input type="checkbox" id="btn-menu">
+	  	<label for="btn-menu"><img  class="icon"  src="imagen/menu.png"></label>
+<nav class="menu">
+	<ul class="ul">
+			<li class="inicio" ><a href="IND.html">Inicio</a></li>
+			<li class="nav-items"><a href="FormularioHtml5 - copia.html">Formulario</a></li>
+            <li class="nav-items"><a href="video.HTML">Video</a></li>
+            <li class="nav-items"><a href="dragdrop.html">Drag and Drop</a></li>
+             
+		</ul>
+
+</nav>
+
+	  </header>
+
+<div class="boxs">
+	<div class="caj">
+	<img  class="a" src="imagen/computer-icons-person-login-anonymous.jpg">
+<p >
+Nombre:Eric
+	<br>
+	Edad:26 años
+	<br>
+	Email:user@gmail.com 
+	<br>
+	mi hobie son los juegos de shooter
+</p>
+</div>
+		
+		
+		
+<div class="user2">
+
+<img  class="a" src="imagen/computer-icons-person-login-anonymous.jpg">
+
+ <p >
+Nombre:user2
+	<br>
+	Edad:20 años
+	<br>
+	Email:user@gmail.com 
+	<br>
+	me gusta el deporte
+</p>
+</div>
+
+
+
+
+
+</div>
+	    	
+
+
+  	
+	   
+
+
+
+
+
+	
+
+	  
+<footer class="footer">
+	 Programacion 3 - Todos los derechos reservados
+		<label class="icon-twitter"></label>
+		<label class="icon-facebook"></label>
+		<label for="" class="icon-instagram"></label>
+		<a id="quienes"  onclick="myfuncion()" href="quienes somos.html">Quienes somos</a></li>
+		
+
+
+
+
+
+
+</body>
+
+</html>

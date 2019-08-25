@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	
+body{
+	
+margin: 0;
+padding: 0;
+  height: 100%;
+    background-repeat: no-repeat;
+    background: url(imagen/painting-graffiti-urban-decay-abandon-deserted-ruin-psychedelic-architecture-buildings-color-background-190368.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+
+ 
+}
+header label{
+ display: none;
+ width: 30px;
+ height: 25px;
+ padding: 10px; }
+header label:hover{ background: rgba(0,0,0,0.5); }
+
+ul{
+	
+	opacity: 0.8;
+
+height: 40px;
+  background-position: 30px;
+
+padding: 0;
+margin: 0px;
+
+font-weight: 300;
+	text-align: right;
+
+	transition: max-height 0.5s;
+
+}
+ul:hover{
+	opacity: 2;
+}
+
+.menu li:nth-child(3) {
+	
+	background: red;
+}
+.nav-items {
+	
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: #96FD03;
+display: inline-block;
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+.inicio{
+	
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: #96FD03;
+position: absolute;
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+.inicio:hover{
+	background: red;
+	--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;}
+.nav-items:hover{
+
+background: red;
+--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;
+}
+
+
+
+
+
+/*.nav{
+
+	text-align: left;
+	position: absolute;
+	font-family: Roboto,sans-serif;
+background: #96FD03;
+
+padding: .375rem .75rem;
+ border-radius: 6px;
+ font-size: 20px;
+ opacity: inherit;
+
+}
+.nav:hover{
+	
+--webkit-transform: rotateY(360deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(360deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ box-shadow: 0 0 0 5px #96FD03, 0 0 0 5px white;
+	 
+}*/
+
+a:link{text-decoration: none;}
+a:hover{text-decoration: none;
+color: white;
+
+}
+
+	a{  color :white;
+		text-decoration: none; 
+		
+
+		} 
+			
+
+.footer{
+		font-family: Roboto,sans-serif;
+	font-size: 20px;
+	text-decoration-color: orange
+	font:sans-serif;
+	position:fixed;
+bottom:0;
+	width: 100%;
+	height: 40px;
+	color: white;
+	background: black;
+	padding: 0px;
+	text-align: center;
+
+   opacity: 0.5;
+}
+.footer:hover{ opacity: 2; }
+
+
+img{width: 25px; border-radius: 10px;}
+img:hover{
+	 box-shadow: 0 0 0 5px white, 0 0 0 5px white;
+}
+
+header{ 
+	width: 100%;
+	 background: black;}
+#btn-menu{
+	display: none;}
+
+
+
+@media (max-width:710px ){
+
+#quienes{display: none;}
+	header label{ display: block; }
+	.nav-items{ display: flex; }
+
+.nav-items:hover{
+margin: 9px;
+background: red;
+--webkit-transform: rotateY(0deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(0deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;
+}
+.inicio:hover{
+	margin: 9px;
+	background: red;
+	--webkit-transform: rotateY(0deg);
+	--webkit-transform-style:preserve-3d;
+	transform:rotateY(0deg);
+	transform-style:preserve-3d;
+	transition: 0.5s;
+text-decoration: none;
+ opacity: inherit;
+ box-shadow: 0 0 0 5px red, 0 0 0 5px #FFF;}
+
+	.inicio{ position: relative; }
+	.menu{
+	 position: absolute;
+	 width: 70%;
+	 margin-left: -70%;
+	  }
+	.menu ul{ 
+		text-align: left;
+		flex-direction: column; 
+	}
+
+	#btn-menu:checked ~ .menu {
+		margin:  0;
+	}
+	
+}
+
+#quienes{ 
+	float: right; color: white;
+	cursor: pointer;
+ font-family: Roboto,sans-serif;
+background: yellow;
+
+
+ padding: .375rem .75rem;
+ border-radius: 6px;
+	font-size: 20px;
+	opacity: inherit;
+
+}
+#quienes:hover{
+
+	background: red;
+}
+
+.inicio{
+
+
+}
+.contenedor{
+	display: flex;
+	justify-content: center;
+}
+
+.vid{
+	width:80%; 
+}
+
+h1{ text-align: center; font-family: Roboto,sans-serif;
+ color: white;}
+</style>
+<body>
+	
+	 <header>
+	  	<input type="checkbox" id="btn-menu">
+	  	<label for="btn-menu"><img  class="icon"  src="imagen/menu.png"></label>
+<nav class="menu">
+	<ul class="ul">
+			<li class="inicio" ><a href="IND.html">Inicio</a></li>
+			<li class="nav-items"><a href="FormularioHtml5 - copia.html">Formulario</a></li>
+            <li class="nav-items"><a href="video.HTML">Video</a></li>
+            <li class="nav-items"><a href="dragdrop.html">Drag and Drop</a></li>
+             
+		</ul> 
+
+</nav>
+
+	  </header>
+	    	
+	    <h1>Video en reproduccion</h1>
+
+<div class="contenedor">
+	<video class="vid"  controls poster="recursos-videos/portad.PNG" preload autoplay loop>
+			
+			<source src="videos/planeas.mp4" type="video/mp4" />
+			
+			<p>El navegador no soporta videos html</p>
+		</video>	
+	   
+</div>
+		
+	
+
+	  
+<footer class="footer">
+	 Programacion 3 - Todos los derechos reservados
+		<label class="icon-twitter"></label>
+		<label class="icon-facebook"></label>
+		<label for="" class="icon-instagram"></label>
+		<a id="quienes" href="quienes somos.html">Quienes somos</a>
+		
+	</footer>
+		
+
+
+
+
+
+
+
+</body>
+</html>
